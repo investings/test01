@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spocket Rocket</title>
 
+
+ 
   <style>
     :root {
     --primary: #0c63ff;
@@ -69,6 +71,14 @@ input[type=submit] {
     padding: 0 1.5625rem;
     text-decoration: none
 }
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
 
 .text-btn {
     font-family: Poppins, sans-serif;
@@ -11790,7 +11800,7 @@ a.cta_button {
                                   <div class="sr-cover-inner">
                                     <div class="sr-spacer-bottom-50"> 
 
-                                      <video width="640" height="480" controls>
+                                      <video class="video-background" autoplay muted loop>
                                         <source src="gifka2.mp4" type="video/mp4">
                                         Ваш браузер не поддерживает тег video.
                                         </video>
